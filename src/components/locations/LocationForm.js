@@ -26,7 +26,7 @@ export const LocationForm = () => {
     }
 
     const handleClickSaveLocation = (event) => {
-        // event.preventDefault()
+        
         const address = location.address
 
         if (address === "") {
@@ -76,7 +76,7 @@ export const LocationForm = () => {
             <fieldset>
                 <div className="form-group">
                     <label htmlfor="location">Assign address to Location:</label>
-                    <input type="text" id="location" required autoFocus className="form-control" placeholder="Location Address" value={location.address} onChange={handleControlledInputChange} />
+                    <input type="text" id="address" required autoFocus className="form-control" placeholder="Location Address" value={location.address} onChange={handleControlledInputChange} />
                 </div>
             </fieldset>
             <button className="btn btn-primary"
